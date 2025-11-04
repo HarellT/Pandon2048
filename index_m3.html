@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pandon2048</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="../img/Pandalogo-Notext.png">
+  <link rel="Pandalogo" href="../img/Pandalogo-Notext.png">
+
+</head>
+
+<body>
+
+  <div id="controls-info">
+    <div id="control-display"></div>
+    <div id="timer-display"></div>
+  </div>
+
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">PANDON 2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0🎋's</div>
+        <div class="best-container">0🎋's</div>
+      </div>
+    </div>
+
+    <div id="popup" class="popup">
+      <p>select a mode</p>
+      <div class="popup-button">
+        <button id="button1">5x5</button>
+        <button id="button2">Normal</button>
+        <button id="button3">Shuffle</button>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="doge-says">
+        <p></p>
+      </div>
+
+      
+      <div class="info">
+        <!-- <div class="hide-info"><a>HIDE</a></div> -->
+        <div class="info-text">
+          <p>Use your arrow keys or swipe to combine similar Pandons and score bamboo points! </p>
+          <p>Unlock all 11 Pandons to win!</p>
+        </div>
+
+
+        <div class="gifs-container">
+          <div class="gifs-item">
+            <img src="img/2Panda.gif">
+            <p>2 Panda</p>
+          </div>
+        </div>
+        <div class="gifs-container">
+          <div class="gifs-item">
+            <img src="img/4Panda.gif">
+            <p>4 Panda</p>
+          </div>
+        </div>
+        <div class="gifs-container">
+          <div class="gifs-item">
+            <img src="img/8Panda.gif">
+            <p>8 Panda</p>
+          </div>
+        </div>
+        <div class="gifs-container">
+          <div class="gifs-item">
+            <img src="img/16Panda.gif">
+            <p>16 Panda</p>
+          </div>
+        </div>
+        <div class="gifs-container">
+          <div class="gifs-item">
+            <img src="img/32Panda.gif">
+            <p>32 Panda</p>
+          </div>
+        </div>
+        <div class="gifs-container">
+          <div class="gifs-item">
+            <img src="img/64Panda.gif">
+            <p>64 Panda</p>
+          </div>
+        </div>
+        <div class="gifs-container">
+          <div class="gifs-item">
+            <img src="img/128Panda.gif">
+            <p>128 Panda</p>
+          </div>
+        </div>
+        <div class="gifs-container">
+          <div class="gifs-item">
+            <img src="img/256Panda.gif">
+            <p>256 Panda</p>
+          </div>
+        </div>
+        <div class="gifs-container">
+          <div class="gifs-item">
+            <img src="img/512Panda.gif">
+            <p>512 Panda</p>
+          </div>
+        </div>
+        <div class="gifs-container">
+          <div class="gifs-item">
+            <img src="img/1024Panda.gif">
+            <p>1024 Panda</p>
+          </div>
+        </div>
+        <div class="gifs-container">
+          <div class="gifs-item">
+            <img src="img/2048Panda.gif">
+            <p>2048 Panda</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+    <p class="game-explanation">Use your arrow keys or swipe to combine similar Pandons and score bamboo points!</p>
+
+    <div class="info-container">
+      <a class="show-info">open</a>
+    </div>
+
+    <div id="open-popup" class="open-popup">
+      <a class="open-buttons">different</a>
+    </div>
+  </div>
+
+
+  <script src="js/mode.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager_m3.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_score_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-49053101-1', 'doge2048.com');
+    ga('send', 'pageview');
+
+  </script>
+  <div id="fb-root"></div>
+  <script>(function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=550840018347573";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+</body>
+
+</html>
